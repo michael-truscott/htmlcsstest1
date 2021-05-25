@@ -1,0 +1,111 @@
+/*
+Reset margins
+*/
+body, h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+}
+
+html {
+    background-color: rgb(200,200,200);
+}
+
+/*
+Header
+*/
+header {
+    text-align: center;
+    background-color: palevioletred;
+}
+
+header h1 {
+    margin: 0;
+    padding: 1em 0;
+    font-family: sans-serif;
+}
+
+/*
+Navigation
+*/
+nav {
+    text-transform: uppercase;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+nav ul {
+    background-color: orange;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    background-color: lightblue;
+}
+
+nav a {
+    display: block;
+    padding: 0.5em 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/*
+Article
+*/
+main {
+    background-color: lightgray;
+    padding: 20px 0px;
+}
+
+article {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    background-color: lightsteelblue;
+}
+
+.article-title {
+    font-size: 2em;
+}
+
+.article-byline {
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+.article-author {
+    font-weight: bold;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+figure img {
+    object-fit: contain;
+    width: 80%;
+    height: 80%;
+}
+
+/*
+Footer
+*/
+footer {
+    background-color: rgb(200,200,200);
+    padding: 1em 20px;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 0;
+}
