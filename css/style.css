@@ -43,6 +43,14 @@ nav li {
     background-color: lightblue;
 }
 
+@media screen and (max-width: 500px) {
+    nav li {
+        display: block;
+        margin: 0 10px;
+        border: 1px solid black;
+    }
+}
+
 nav a {
     display: block;
     padding: 0.5em 20px;
