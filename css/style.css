@@ -133,11 +133,16 @@ footer p {
 /*
 Contact form
 */
+
+#contact-form input {
+    font-size: 16px;
+}
+
 #contact-form input[type='text'],
 #contact-form input[type='email'],
 #contact-form textarea {
     width: 100%;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 #contact-form input[type='submit'] {
