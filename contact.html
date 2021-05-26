@@ -22,7 +22,27 @@
     </nav>
 
     <main>
-        Contact
+        <section class="page-title">
+            <h2>Contact</h2>
+        </section>
+
+        <article>
+            <form id="contact-form" action="https://formspree.io/f/mvodagde" method="POST">
+                <label for="name">Name</label>
+                <input type="text" name="name">
+
+                <label for="email">Your Email</label>
+                <input type="email" name="_replyto">
+
+                <label for="subject">Subject</label>
+                <input type="text" name="_subject" value="HELLO">
+
+                <label for="message">Message</label>
+                <textarea name="message" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+        </article>
     </main>
 
     <footer>
