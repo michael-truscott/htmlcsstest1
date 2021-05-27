@@ -38,14 +38,13 @@ section.page-title {
 Navigation
 */
 nav {
-    text-transform: uppercase;
-    font-family: 'Comic Sans MS', sans-serif;
+    background-color: orange;
 }
 
 nav ul {
-    background-color: orange;
     text-align: center;
     padding: 10px 0px;
+    transition: all 0.2s;
 }
 
 nav li {
@@ -53,23 +52,50 @@ nav li {
     display: inline-block;
     background-color: lightblue;
     border: 1px solid black;
-    transition: all 0.2s;
+    transition: background-color 0.2s;
 }
 
 nav li:hover {
     background-color: transparent;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     nav li {
         display: block;
         margin: 0 10px;
     }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.show-menu {
+        display: block;
+    }
 }
 
-nav a {
+.menu-btn {
+    padding: 8px 8px;
+    margin: 0 10px;
+    text-align: right;
+}
+
+.menu-btn i {
+    font-size: 2em;
+    color: black;
+}
+
+@media screen and (min-width: 599px) {
+    .menu-btn {
+        display: none;
+    }
+}
+
+nav a.link {
     display: block;
     padding: 0.5em 20px;
+    text-transform: uppercase;
+    font-family: 'Comic Sans MS', sans-serif;
     text-decoration: none;
     color: black;
 }
@@ -83,11 +109,14 @@ main {
 }
 
 article {
-    font-family: 'Trebuchet MS', Arial, sans-serif;
     max-width: 600px;
     margin: 20px auto;
     padding: 20px 20px;
     background-color: lightsteelblue;
+}
+
+article p {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 .article-title {

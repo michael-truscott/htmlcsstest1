@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Really Cool Website</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -13,11 +16,14 @@
     </header>
 
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="recent.html">Recent</a></li>
-            <li><a href="archive.html">Archive</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <div class="menu-btn">
+            <a href="#" onclick="toggleMenu()"><i class="fas fa-bars"></i></a>
+        </div>
+        <ul id="menu">
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="recent.html" class="link">Recent</a></li>
+            <li><a href="archive.html" class="link">Archive</a></li>
+            <li><a href="contact.html" class="link">Contact</a></li>
         </ul>
     </nav>
 
